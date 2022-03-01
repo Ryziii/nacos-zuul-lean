@@ -97,3 +97,13 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 !/.idea/
+/.idea/.gitignore
+/.idea/compiler.xml
+/.idea/encodings.xml
+/.idea/jarRepositories.xml
+/.idea/misc.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
+/common/target/
+/core/target/
+/gateway/target/
