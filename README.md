@@ -9,6 +9,7 @@
 
 ## demo地址
 [http://120.48.9.152:8001](http://120.48.9.152:8001/)
+可结合接口文档使用postman调用RestfulApi检验
 
 ## 可能会用到的东西
 在调用api时可能会用到的`token: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDY3NTEwMDQsImlkIjoiMSJ9.ajzh0yoaGcGf4Yb3Wg3odb1tW2MHOkCVwaPmrl4yyGs`
