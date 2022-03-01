@@ -4,7 +4,7 @@
 **简介**:Aidoo Test
 
 
-**HOST**:http://localhost:8002
+**HOST**:http://120.48.9.152:8001/
 
 
 **联系人**:
