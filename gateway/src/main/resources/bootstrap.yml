@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: aidoo-gateway
+  cloud:
+    nacos:
+      config:
+        server-addr: 120.48.9.152:8848
+        sharedConfigs: public.properties
+        file-extension: yaml
+        refresh-enabled: true
+        namespace: df25446b-e98a-4b71-8f03-a8cbe5ec2fc5
+
+      discovery:
+        server-addr: 120.48.9.152:8848
+        namespace: df25446b-e98a-4b71-8f03-a8cbe5ec2fc5
+
+#  profiles:
+#    active: home

@@ -107,3 +107,4 @@ fabric.properties
 /common/target/
 /core/target/
 /gateway/target/
+/gateway/target/classes/

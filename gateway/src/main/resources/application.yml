@@ -1,0 +1,18 @@
+server:
+  port: 8001
+  servlet:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+zuul:
+  routes:
+    aidoo-core:
+      path: /**
+      serviceId: aidoo-core
+      sensitive-headers:
+
+aidoo-core:
+  ribbon:
+    ReadTimeout: 60000  # 单位毫秒数
+    SocketTimeout: 60000
