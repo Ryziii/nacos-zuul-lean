@@ -43,7 +43,7 @@ public class UserController {
      * @return
      */
     @ApiOperation(value = "通过id查询用户", httpMethod = "GET")
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/find/{id}", method = RequestMethod.GET)
     public ResultVO<Object> getUserById(@PathVariable String id){
         UserEntity user = userService.getUserById(id);
         UserVO vo = new UserVO();

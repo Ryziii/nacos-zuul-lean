@@ -24,3 +24,7 @@ knife4j:
     enable: false
     username: test
     password: 1234
+sftp:
+  host: ${mid.sftp.host}
+  username: ${mid.sftp.username}
+  password: ${mid.sftp.password}

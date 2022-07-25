@@ -17,8 +17,8 @@ public interface UserMapper {
     @Select("SELECT * FROM users WHERE id = #{id}")
     UserEntity getUserById(String id);
 
-    @Insert("INSERT INTO users(id, name, dob, address, description, password)" +
-            "VALUES(#{id}, #{name}, #{dob}, #{address}, #{description}, #{password})")
+    @Insert("INSERT INTO users(id, name, dob, address, description, password, verification_mode)" +
+            "VALUES(#{id}, #{name}, #{dob}, #{address}, #{description}, #{password}, #{verificationMode})")
     void insert(UserEntity userEntity);
 
     @Update("UPDATE users SET name=#{name}, password=#{password}, dob=#{dob}, address=#{address}, description=#{description} WHERE id=#{id}")

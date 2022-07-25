@@ -27,4 +27,13 @@ public class TokenController {
             @RequestParam(name = "password", required = true) String password){
         return userService.login(username, password);
     }
+//    @RequestMapping(value = "/init/", method = RequestMethod.GET)
+//    public ResultVO<Object> init(){
+//        try {
+//            NetSignAgent.initialize("template.netagent/netsignagent.properties");
+//            return ResultVO.builder().msg("123123").build();
+//        } catch (NetSignAgentException e) {
+//            throw new RuntimeException(e);
+//        }
+//    }
 }

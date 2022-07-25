@@ -2,6 +2,7 @@ package com.rysiw.aidoo.core.service.impl;
 
 import com.rysiw.aidoo.common.constant.RespCode;
 import com.rysiw.aidoo.common.constant.SecurityConstants;
+import com.rysiw.aidoo.common.constant.enums.VerificationModeEnum;
 import com.rysiw.aidoo.common.utils.AuthUtil;
 import com.rysiw.aidoo.common.utils.JwtUtil;
 import com.rysiw.aidoo.common.utils.ResultUtil;
@@ -54,6 +55,7 @@ public class UserServiceImpl implements UserService {
                     return ResultUtil.error().buildMessage("创建用户失败，用户已存在！");
                 }
             }
+            userEntity.setVerificationMode(VerificationModeEnum.PASSWORD);
             userEntity.setId(UUID.randomUUID().toString().replaceAll("-",""));
             userEntity.setCreatedAt(new Date());
             userMapper.insert(userEntity);

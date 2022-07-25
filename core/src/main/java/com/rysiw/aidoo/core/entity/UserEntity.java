@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.rysiw.aidoo.common.constant.enums.VerificationModeEnum;
 import lombok.Data;
 import org.apache.ibatis.annotations.Options;
 
@@ -53,4 +54,8 @@ public class UserEntity {
      * 密码
      */
     private String password;
+    /**
+     * 验证方式
+     */
+    private VerificationModeEnum verificationMode;
 }
