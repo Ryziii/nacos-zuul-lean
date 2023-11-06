@@ -1,6 +1,6 @@
 spring:
   application:
-    name: aidoo-gateway
+    name: nacoslean-gateway
   cloud:
     nacos:
       config:

@@ -7,12 +7,12 @@ server:
       force: true
 zuul:
   routes:
-    aidoo-core:
+    nacoslean-core:
       path: /**
-      serviceId: aidoo-core
+      serviceId: nacoslean-core
       sensitive-headers:
 
-aidoo-core:
+nacoslean-core:
   ribbon:
     ReadTimeout: 60000  # 单位毫秒数
     SocketTimeout: 60000
